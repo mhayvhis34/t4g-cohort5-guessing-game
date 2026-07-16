@@ -6,8 +6,8 @@ import random
 def generate_secret_number():
     return random.randint(1, 100)
 
-secret_number = generate_secret_number()
-print(secret_number)
+#secret_number = generate_secret_number()
+#print(secret_number)
 
 
 def play_game():
@@ -29,4 +29,4 @@ def play_game():
                 break
         except ValueError:
             print("Please enter a valid whole number.")
-    
+play_game()
