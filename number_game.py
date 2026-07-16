@@ -19,7 +19,7 @@ def play_game():
         try:
             guess = int(input("Enter your guess (1-100): "))
             attempts += 1
-
+            # Check whether the guess is correct
             if guess > secret_number:
                 print("Too high! Try again.")
             elif guess < secret_number:
@@ -29,4 +29,12 @@ def play_game():
                 break
         except ValueError:
             print("Please enter a valid whole number.")
-play_game()
+while True:
+    play_game()
+
+    play_again = input("Do you want to play again? (yes/no): ").strip().upper()
+
+    if play_again != "yes":
+        print("Thanks for playing!")
+        break
+
