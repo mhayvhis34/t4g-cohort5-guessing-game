@@ -32,7 +32,7 @@ def play_game():
 while True:
     play_game()
 
-    play_again = input("Do you want to play again? (yes/no): ").strip().upper()
+    play_again = input("Do you want to play again? (yes/no): ").lower()
 
     if play_again != "yes":
         print("Thanks for playing!")
